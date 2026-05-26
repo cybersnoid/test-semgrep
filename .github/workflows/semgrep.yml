@@ -4,8 +4,12 @@ on:
   push:
     branches:
       - main
+      - master
       - develop
   pull_request:
+    branches:
+      - main
+      - master
 
 permissions:
   contents: read
@@ -24,7 +28,7 @@ jobs:
 
       - name: Ejecutar análisis de seguridad
         run: |
-          semgrep --config=auto --sarif --output=semgrep-results.sarif --exclude .github . || true
+          semgrep scan --config=auto --error .
 
       - name: Mostrar resultados
         run: cat semgrep-results.sarif
