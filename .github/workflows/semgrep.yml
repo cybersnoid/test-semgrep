@@ -3,9 +3,7 @@ name: Semgrep SAST Scan
 on:
   push:
     branches:
-      - main
-      - master
-      - develop
+      - NuevaRama
   pull_request:
     branches:
       - main
