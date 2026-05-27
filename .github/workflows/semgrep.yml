@@ -1,13 +1,13 @@
 name: Semgrep SAST Scan
 
 on:
-  push:
-    branches:
-      - NuevaRama
+#  push:
+#    branches:
+#      - NuevaRama
   pull_request:
     branches:
       - main
-      - master
+#      - master
 
 permissions:
   contents: read
