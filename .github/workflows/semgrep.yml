@@ -30,3 +30,4 @@ jobs:
 
       - name: Mostrar resultados
         run: cat semgrep-results.sarif
+
