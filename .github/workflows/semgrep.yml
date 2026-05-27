@@ -28,5 +28,5 @@ jobs:
         run: |
           semgrep scan --config=auto --error .
 
-      - name: Mostrar resultados
-        run: cat semgrep-results.sarif
+#      - name: Mostrar resultados
+#        run: cat semgrep-results.sarif
