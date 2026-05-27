@@ -1,15 +1,9 @@
 name: Semgrep SAST Scan
 
 on:
-  push:
-    branches:
-      - main
-      - master
-      - develop
   pull_request:
     branches:
       - main
-      - master
 
 permissions:
   contents: read
